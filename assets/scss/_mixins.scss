@@ -4,14 +4,21 @@
   list-style: none;
 }
 
-@mixin a {
+@mixin a($link-color) {
   text-decoration: none;
-  color: black;
+  color: $link-color;
 }
 
 @mixin transition {
-  transition: all 400ms ease-in-out;
+  transition: all 300ms ease-in-out;
 
+}
+
+@mixin flex( $justify, $align, $gap){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
 }
 
 
